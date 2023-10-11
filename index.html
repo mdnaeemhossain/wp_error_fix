@@ -1,3 +1,4 @@
+/* elementor mega menu outside click not working */
 <script>
 	document.body.addEventListener('click', function (event) {
 		if ( ! event.target.closest('.e-n-menu') ) {
@@ -10,6 +11,10 @@
 			});
 		}
 	});
+</script>
+
+/* elementor mega menu active color not working stackoverflow solve */
+<script>
 	const megaMenuEdit = document.querySelectorAll('.e-click');
 	megaMenuEdit.forEach(item => {
 		const content = item.querySelector('.e-click');
