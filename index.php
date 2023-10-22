@@ -18,7 +18,7 @@ Warning!!! Deprecated: strpos(): Passing null to parameter #1 in php 8.1 SOLVED
 Deprecated: str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in G:\laragon\www\bdebest-wcl\wp-includes\functions.php on line 2165
 // Standardize all paths to use '/'.
 
-	$path = $path?str_replace( '\\', '/', $path ):"";  //$path = str_replace( '\\', '/', $path );
+	$path = $path?str_replace( '\\', '/', $path ):"";     // $path = str_replace( '\\', '/', $path );
 }
 
 /* elementor mega menu outside click not working */
