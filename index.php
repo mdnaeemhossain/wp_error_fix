@@ -15,7 +15,6 @@ Warning!!! Deprecated: strpos(): Passing null to parameter #1 in php 8.1 SOLVED
 
 	$scheme_separator = is_string($path)?strpos( $path, '://' ):false; //$scheme_separator = strpos( $path, '://' );
 
-Deprecated: rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in G:\laragon\www\bdebest-wcl\wp-includes\formatting.php on line 2809
 Deprecated: str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in G:\laragon\www\bdebest-wcl\wp-includes\functions.php on line 2165
 // Standardize all paths to use '/'.
 
