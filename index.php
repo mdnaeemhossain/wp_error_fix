@@ -4,6 +4,9 @@ Add to wp-config.php: */
 define( 'WP_MAX_MEMORY_LIMIT' , '512M' );
 define( 'WP_MEMORY_LIMIT' , '512M' );
 
+// Standardize all paths to use '/'.
+$path = $path?str_replace( '\\', '/', $path ):"";
+
 /* elementor mega menu outside click not working */
 <script>
 	document.body.addEventListener('click', function (event) {
