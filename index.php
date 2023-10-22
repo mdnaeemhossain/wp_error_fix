@@ -4,7 +4,7 @@ Add to wp-config.php: */
 define( 'WP_MAX_MEMORY_LIMIT' , '512M' );
 define( 'WP_MEMORY_LIMIT' , '512M' );
 
-{
+/*{
 Warning!!! Migration to PHP 8.1 - how to fix Deprecated Passing null to parameter error - rename build in functions
 //Deprecated: rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in G:\laragon\www\bdebest-wcl\wp-includes\formatting.php on line 2809
 
