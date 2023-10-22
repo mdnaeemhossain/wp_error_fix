@@ -4,8 +4,14 @@ Add to wp-config.php: */
 define( 'WP_MAX_MEMORY_LIMIT' , '512M' );
 define( 'WP_MEMORY_LIMIT' , '512M' );
 
+{
+Deprecated: rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in G:\laragon\www\bdebest-wcl\wp-includes\formatting.php on line 2809
+Deprecated: str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in G:\laragon\www\bdebest-wcl\wp-includes\functions.php on line 2165
+Deprecated: str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in G:\laragon\www\bdebest-wcl\wp-includes\functions.php on line 2165
+
 // Standardize all paths to use '/'.
 $path = $path?str_replace( '\\', '/', $path ):"";
+}
 
 /* elementor mega menu outside click not working */
 <script>
