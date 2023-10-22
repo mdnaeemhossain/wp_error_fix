@@ -13,7 +13,7 @@ Warning!!! Migration to PHP 8.1 - how to fix Deprecated Passing null to paramete
 Warning!!! Deprecated: strpos(): Passing null to parameter #1 in php 8.1 SOLVED
 //Deprecated: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in G:\laragon\www\bdebest-wcl\wp-includes\functions.php on line 7053
 
-	$scheme_separator = is_string($path)?strpos( $path, '://' ):false; //$scheme_separator = strpos( $path, '://' );
+	$scheme_separator = is_string($path)?strpos( $path, '://' ):false;    // $scheme_separator = strpos( $path, '://' );
 
 Deprecated: str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in G:\laragon\www\bdebest-wcl\wp-includes\functions.php on line 2165
 // Standardize all paths to use '/'.
