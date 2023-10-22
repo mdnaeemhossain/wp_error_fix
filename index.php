@@ -8,7 +8,7 @@ define( 'WP_MEMORY_LIMIT' , '512M' );
 Warning!!! Migration to PHP 8.1 - how to fix Deprecated Passing null to parameter error - rename build in functions
 //Deprecated: rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in G:\laragon\www\bdebest-wcl\wp-includes\formatting.php on line 2809
 
-	return rtrim( $value ?? "", '/\\' );    //return rtrim( $value, '/\\' );
+	return rtrim( $value ?? "", '/\\' );    // return rtrim( $value, '/\\' );
 
 Warning!!! Deprecated: strpos(): Passing null to parameter #1 in php 8.1 SOLVED
 //Deprecated: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in G:\laragon\www\bdebest-wcl\wp-includes\functions.php on line 7053
