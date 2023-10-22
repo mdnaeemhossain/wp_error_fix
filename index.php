@@ -19,7 +19,7 @@ Deprecated: str_replace(): Passing null to parameter #3 ($subject) of type array
 // Standardize all paths to use '/'.
 
 	$path = $path?str_replace( '\\', '/', $path ):"";     // $path = str_replace( '\\', '/', $path );
-}
+} */
 
 /* elementor mega menu outside click not working */
 <script>
