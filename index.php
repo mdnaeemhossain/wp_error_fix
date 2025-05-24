@@ -65,3 +65,59 @@ if( !function_exists('redirect_404_to_homepage') ){
         endif;
     }
 }
+
+
+-----------------------------------
+// Register Custom Post Type: Project
+function create_projects_post_type() {
+    $labels = array(
+        'name' => 'Projects',
+        'singular_name' => 'Project',
+        'menu_name' => 'Projects',
+        'name_admin_bar' => 'Project',
+        'add_new' => 'Add New',
+        'add_new_item' => 'Add New Project',
+        'edit_item' => 'Edit Project',
+        'new_item' => 'New Project',
+        'view_item' => 'View Project',
+        'all_items' => 'All Projects',
+        'search_items' => 'Search Projects',
+        'not_found' => 'No projects found.',
+        'not_found_in_trash' => 'No projects found in Trash.'
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'projects'),
+        'show_in_rest' => true,
+        'menu_position' => 5,
+        'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
+        'taxonomies' => array('project_category'), // attach custom taxonomy
+    );
+
+    register_post_type('project', $args);
+}
+add_action('init', 'create_projects_post_type');
+
+// Register Custom Taxonomy: Project Categories
+function create_project_taxonomy() {
+    register_taxonomy(
+        'project_category',
+        'project',
+        array(
+            'label' => 'Project Categories',
+            'rewrite' => array('slug' => 'project-category'),
+            'hierarchical' => true,
+            'show_in_rest' => true
+        )
+    );
+}
+add_action('init', 'create_project_taxonomy');
+
+function add_elementor_support_for_projects() {
+    add_post_type_support( 'project', 'elementor' );
+}
+add_action( 'init', 'add_elementor_support_for_projects' );
+----------------------------------------------------------------------
